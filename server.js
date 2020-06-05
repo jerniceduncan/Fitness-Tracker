@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const PORT = 3000;
 
 const app = express();
+const MONGODB = process.env.MONGODN || "mongodb://localhost/workout";
 
 app.use(logger("dev"));
 
